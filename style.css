@@ -1,0 +1,282 @@
+/* Universal css  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* Body CSS  */
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+}
+
+.container .card{
+    width: 985px;
+    height: 798px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+}
+
+.card .navigation{
+    width: 225px;
+    height: 662px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card .navigation .twitter i{
+    color: #41ABE1;
+    font-size: 30px;
+}
+
+.card .navigation a i{
+    margin-right: 10px;
+}
+
+.card .navigation a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #0f1419;
+    font-weight: bold;
+}
+
+.card .navigation .border-radius{
+    border: 2px solid black;
+    padding: 2px 2px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.card .navigation button{
+    padding: 18px 9px;
+    border-radius: 25px;
+    border:none;
+    background-color: #1D9BF0;
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.card .navigation .profile-pic{
+    display: flex;
+    gap: 10px;
+}
+
+.card .navigation .profile-pic .details {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+}
+
+.card .navigation .profile-pic .details span,
+.profile .profile-details .details span{
+    color: black;
+    font-weight: bold;
+}
+
+
+.card .navigation .profile-pic .details .normal,
+.profile .profile-details .details .normal{
+    opacity: 0.3;
+}
+
+.card .navigation .profile-pic i{
+    display: flex;
+    align-items: center;
+}
+
+/* profile started  */
+
+.profile .profile-details{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 521px;
+}
+
+.profile .profile-details .title{
+    position:relative;
+    padding: 10px 0px;
+}
+
+.profile .profile-details .title .icon{
+    font-size: 12px;
+    color: black;
+    margin-left: 20px;
+}
+
+.profile .profile-details .title h6{
+    position: absolute;
+    font-size: 16px;
+    left: 13%;
+    top: 10%;
+}
+
+.profile .profile-details .title span{
+    position: absolute;
+    font-size: 10px;
+    left: 13%;
+    top: 55%;
+    opacity: 0.5;
+}
+
+.profile-details .bg-img{
+    position:relative;
+    background-repeat: no-repeat;
+}
+
+.profile-details .bg-img .profile-image{
+    position:absolute;
+    top: 50%;
+    left: 2%;
+}
+
+.profile-details .edit-profile{
+    display: inline-block;
+    width: 132px;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+
+.profile .profile-details .details{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 20px;
+}
+
+.profile .profile-details .des{
+    margin: 10px 0px 0px 20px;
+    display: inline-block;
+}
+
+.profile .profile-details .location{
+        margin: 8px 0px 0px 17px;
+    }
+
+.profile .profile-details .location a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.504);
+        margin: 5px;
+        font-size: 20px;
+}
+
+.profile .profile-details .followers{
+    margin: 14px 0px 0px 20px;
+}
+
+.followers span{
+    color: rgba(0, 0, 0, 0.51);
+}
+
+.followers .sonkha{
+    color: black;
+    font-weight: bold;
+}
+
+.followers .gap{
+    margin-left: 60px;
+}
+
+.profile .btn{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    border-bottom: 2px solid rgba(93, 88, 88, 0.669);
+    height: 59px;
+}
+
+.profile .btn button{
+    width: 110px;
+    height: 38px;
+    /* padding:0px; */
+    background-color: white;
+    border:none;
+    position:relative;
+}
+
+
+.profile .btn button::after{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #1D9BF0;
+    position:absolute;
+    opacity: 0;
+}
+
+.profile .btn button::before{
+    content: "";
+    width: 60px;
+    height: 3px;
+    background-color: #1D9BF0;
+    position:absolute;
+    opacity: 0;
+}
+
+.profile .btn button:hover::after,
+.profile .btn button:hover::before{
+    width: 100%;
+    opacity: 1;
+    top: 72%;
+    left: -1%;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+
+.profile .post{
+    margin-top: 10px;
+}
+
+.post img{
+    display: flex;
+    flex-direction: column;
+}
+
+.post .title{
+    margin: -40px 0px 0px 48px;
+}
+
+.post .title .bold{
+    font-weight: bold;
+    color: black;
+}
+
+.post .title .normal{
+    opacity: 0.5;
+}
+
+.post .paragraph{
+    margin: 5px 0px 14px 48px;
+}
+
+.post .icon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.post .icon a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
